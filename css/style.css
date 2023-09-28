@@ -1,5 +1,5 @@
 header {
-    height: 60px;
+    height: 10vh;
     background-color: #0E0E0E;
 }
 
@@ -11,38 +11,87 @@ main {
 .container {
     background-color: black;
     overflow: auto;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
     width: 90%;
     margin: auto;
-    height: calc(100vh - 280px);
-    
+    height: calc(100vh - 30vh);
+    padding: 20px 0;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
 }
 
 .speakview {
     position: absolute;
     right: 1%;
     top: 0%;
+    z-index: 3;
 }
 
 .speakview div {
     color: white;
-    background-color: #4A4A4A;
+    background-color: #4a4a4a;
     display: inline-block;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 .card {
     background-image: url(https://picsum.photos/300/200);
     background-size: cover;
     background-position: center;
+    width: calc(100% / 7 - 1%);
+    position: relative;
+    margin: 10px 0;
+}
 
+.nametag {
+    background-color: #66717d8a;
+    position: absolute;
+        left: 0%;
+        top: 100%;
+        transform: translate(-0%, -100%);
+    font-size: x-small;
+    padding: 5px;
 }
 
 .navbar {
     background-color: #222222;
-    height: 60px;
+    height: 10vh;
 }
 
 footer {
     background-color: #0E0E0E;
-    height: 60px;
+    height: 10vh;
+}
+
+.icon {
+    display: inline-block;
+    flex-direction: column;
+    line-height: 150%;
+    text-align: center;
+    font-size: 2.5vh;
+    padding: 0.5vw;
+}
+.fa-share-from-square {
+    color: green;
+}
+.end-meeting {
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #4A4A4A;
+    margin-right: 0;
+}
+.end-text {
+    font-size: x-small;
+    color: red;
+    padding: 2vh;
 }
