@@ -32,6 +32,7 @@ main {
     right: 1%;
     top: 0%;
     z-index: 3;
+    cursor: pointer;
 }
 
 .speakview div {
@@ -40,7 +41,7 @@ main {
     display: inline-block;
     border-radius: 5px;
     padding: 5px;
-    cursor: pointer;
+    
 }
 
 .card {
